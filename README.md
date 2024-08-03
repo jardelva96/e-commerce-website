@@ -75,8 +75,8 @@ The frontend server will start on http://localhost:3000.
 Open your browser and visit
 http://localhost:3000
 
-```## 🗂 Project Structure
-
+## 🗂 Project Structure
+```
 e-commerce-website/
 
 ├── client/
