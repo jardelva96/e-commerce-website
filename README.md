@@ -6,7 +6,9 @@
 ![Express](https://img.shields.io/badge/Express-4.17.1-black?style=for-the-badge&logo=express)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
 
-Welcome to the E-commerce Website project! This is a full-stack web application built with React, Redux, and Node.js. It includes a backend API for managing products and a frontend application for displaying and interacting with products.
+Welcome to the **E-commerce Website** project! This is a full-stack web application built with React, Redux, and Node.js. It includes a backend API for managing products and a frontend application for displaying and interacting with products.
+
+![E-commerce](https://media.giphy.com/media/Ll22OhMLAlVDb8UQWe/giphy.gif)
 
 ## 🚀 Features
 
@@ -30,6 +32,8 @@ Welcome to the E-commerce Website project! This is a full-stack web application 
 
 Check out a live demo of the project [here](#).
 
+![Demo](https://media.giphy.com/media/26FPOC3keA8lSy1WU/giphy.gif)
+
 ## 🛠 Getting Started
 
 To get a local copy up and running, follow these simple steps.
@@ -45,20 +49,22 @@ Make sure you have Node.js installed on your machine. You can download it from [
    ```sh
    git clone https://github.com/jardelva96/e-commerce-website.git
    cd e-commerce-website
-   
 Install backend dependencies
 
-
+sh
+Copiar código
 npm install
 Navigate to the client directory and install frontend dependencies
 
-
+sh
+Copiar código
 cd client
 npm install
 Usage
 Run the backend server
 
-
+sh
+Copiar código
 npm start
 The backend server will start on http://localhost:5000.
 
@@ -66,14 +72,17 @@ Run the frontend server
 
 Open a new terminal window, navigate to the client directory, and run:
 
-
+sh
+Copiar código
 npm start
 The frontend server will start on http://localhost:3000.
 
 Open your browser and visit
 
-
+sh
+Copiar código
 http://localhost:3000
+
 🗂 Project Structure
 java
 Copiar código
@@ -108,10 +117,10 @@ Create your Feature Branch (git checkout -b feature/AmazingFeature)
 Commit your Changes (git commit -m 'Add some AmazingFeature')
 Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
+
 📄 License
 Distributed under the MIT License. See LICENSE for more information.
 
 💡 Note: This is a demo project to illustrate the integration of React, Redux, and Node.js. It may not include all the features required for a complete e-commerce platform.
 
 ⭐️ Feel free to star the project if you like it!
-
