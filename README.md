@@ -48,46 +48,36 @@ Make sure you have Node.js installed on your machine. You can download it from [
 
    ```sh
    git clone https://github.com/jardelva96/e-commerce-website.git
-   cd e-commerce-website
-Install backend dependencies
+   cd e-commerce-websInstall backend dependencies
 
-sh
-Copiar código
-npm install
+Install backend dependencies
+npm installite
+
 Navigate to the client directory and install frontend dependencies
 
-sh
-Copiar código
 cd client
 npm install
+
 Usage
 Run the backend server
-
-sh
-Copiar código
 npm start
+
 The backend server will start on http://localhost:5000.
 
 Run the frontend server
 
 Open a new terminal window, navigate to the client directory, and run:
-
-sh
-Copiar código
 npm start
+
+
 The frontend server will start on http://localhost:3000.
 
 Open your browser and visit
-
-sh
-Copiar código
 http://localhost:3000
 
-🗂 Project Structure
-java
-Copiar código
+## 🗂 Project Structure
+
 e-commerce-website/
-│
 ├── client/
 │   ├── public/
 │   │   └── index.html
@@ -109,16 +99,16 @@ e-commerce-website/
 ├── server.js
 ├── package.json
 └── .gitignore
-🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
+##🤝 Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 Fork the Project
 Create your Feature Branch (git checkout -b feature/AmazingFeature)
 Commit your Changes (git commit -m 'Add some AmazingFeature')
 Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
-📄 License
+##📄 License
 Distributed under the MIT License. See LICENSE for more information.
 
 💡 Note: This is a demo project to illustrate the integration of React, Redux, and Node.js. It may not include all the features required for a complete e-commerce platform.
