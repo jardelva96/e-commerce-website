@@ -1,23 +1,28 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const productRoutes = require('./routes/productRoutes');
+const userRoutes = require('./routes/userRoutes');
+const orderRoutes = require('./routes/orderRoutes');
+const { errorHandler } = require('./middlewares/errorMiddleware');
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+mongoose.connect('mongodb://localhost:27017/ecommerce', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+app.use(cors());
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-  res.send('Welcome to the E-commerce API');
-});
+app.use('/api/products', productRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/orders', orderRoutes);
 
-// Placeholder for actual products endpoint
-app.get('/api/products', (req, res) => {
-  const products = [
-    { id: 1, name: 'Product 1', price: 100 },
-    { id: 2, name: 'Product 2', price: 200 },
-    { id: 3, name: 'Product 3', price: 300 },
-  ];
-  res.json(products);
-});
+app.use(errorHandler);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
