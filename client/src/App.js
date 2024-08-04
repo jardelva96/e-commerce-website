@@ -1,13 +1,27 @@
 import React from 'react';
-import ProductList from './components/ProductList';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import ProductPage from './pages/ProductPage';
+import CartPage from './pages/CartPage';
+import CheckoutPage from './pages/CheckoutPage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Welcome to the E-commerce Website</h1>
-      <ProductList />
-    </div>
+    <Router>
+      <Header />
+      <main>
+        <Switch>
+          <Route path="/" component={HomePage} exact />
+          <Route path="/product/:id" component={ProductPage} />
+          <Route path="/cart" component={CartPage} />
+          <Route path="/checkout" component={CheckoutPage} />
+        </Switch>
+      </main>
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;
